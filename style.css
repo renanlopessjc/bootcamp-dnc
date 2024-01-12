@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho{
+    width: 1440px;
+    height: 103px;
+    background-color:#303030;;
+}
+
