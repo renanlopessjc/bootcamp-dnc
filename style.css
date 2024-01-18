@@ -1,7 +1,11 @@
-*{
+body {
     margin: 0px;
     padding: 0px;
+
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.50) 15.91%, rgba(12, 112, 242, 0.00) 24.84%), #303030;
+    background-repeat: no-repeat;
 }
+
 
 #principal{
     width: 100%;
@@ -59,5 +63,112 @@
     
 }
 
+/*Seção principal do site*/
+section {
+    display: flex;
+    flex-direction: column;
+    /*Como usamos o flex-direction:colum, quem irá organizá-los horizontalmente não será o justify-content, vai ser o align-itens*/
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+header{
+    color: white;
+    font-family: 'Inter';
+}
+
+header h1{
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+header .invert{
+    background-color: black;
+    font-weight:bold ;
+    padding: 5px;
+}
+
+form{
+    color: white;
+   
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    width: 600px;
+}
 
 
+.form-group{
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+form input{
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.90);
+    font-size: 20px;
+    padding: 10px;
+    
+}
+
+form label{
+    margin: 10px 0px 10px 0px;
+}
+
+form input ::placeholder{
+    color: rgba(57, 57, 57, 0.5);
+}
+
+.checkbox-itens label{
+    font-size: 25px;
+}
+
+.checkbox-itens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    transform: scale(2);
+}
+
+input[type="submit"]{
+    width: 600px;
+    height: 50px;   
+    border-radius: 10px;
+    background: rgba(12, 112, 242, 0.90);
+    margin-top: 82px;
+    padding: 5px 0px 5px 0px;
+
+    box-shadow: 0px 6px 4px 0px rgba(12, 112, 242, 0.25);
+
+    /*Info Texto*/
+    color: #FFF;
+    font-family: Inter;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    cursor: pointer;
+
+
+}
